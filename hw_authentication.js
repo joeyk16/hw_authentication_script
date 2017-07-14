@@ -1,6 +1,6 @@
 var scriptTags = document.querySelectorAll('script');
 var redirectUrl, domain, clientId;
-for(var i = scriptTags.lenght - 1; i >= 0 ; i--){
+for(var i = scriptTags.length - 1; i >= 0 ; i--){
   if (/hw\_authentication/.test(scriptTags[i].src)){
     redirectUrl = scriptTags[i].dataset.redirectUrl;
     clientId = scriptTags[i].dataset.clientId;
