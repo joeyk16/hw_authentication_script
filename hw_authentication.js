@@ -15,6 +15,14 @@ if (redirectUrl === undefined){
 }
 
 var lock = new Auth0Lock(clientId, domain,{
+    closable: false,
+    theme: {
+      logo: 'https://www.healthwiseglobal.com/images/healthwise-logo.jpg?',
+      primaryColor: '#022e4d'
+    },
+    languageDictionary: {
+      title: ""
+    },
     auth: {
       redirectUrl: redirectUrl,
       responseType: 'code',
